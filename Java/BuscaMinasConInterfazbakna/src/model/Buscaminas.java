@@ -237,7 +237,7 @@ public class Buscaminas {
 	 * Metodo que se encarga de marcar todas las casillas como destapadas
 	 */
 	public void resolver() {
-		for(int i = 0; i<casillas.length; i++){
+		for(int i = 0; i<casillas.length; i++){  
 			for(int j = 0; j<casillas[0].length;j++){
 				casillas[i][j].destapar();
 			}
@@ -255,15 +255,15 @@ public class Buscaminas {
 	 * Si se abre una casilla de tipo Mina, se marca que el jugador perdio el juego.
 	 * @param i - la fila donde esta la casilla 
 	 * @param j - la columna donde esta la casilla
-	 * @return boolean - true si fue posible destaparla, false en caso contrario
-	 */
-	public boolean abrirCasilla(int i, int j) {
+	 * @return boolean - true si fue posible destaparla, false en caso contrario 
+	 */ 
+	public boolean abrirCasilla(int i, int j) { 
 		
 		boolean open = false;
 		try {
 			if(casillas[i][j].darSeleccionada() == false){
 				casillas[i][j].destapar();
-				open = true;
+				open = true; 
 			}
 			if(casillas[i][j].esMina() == true) {
 				perdio = true;
@@ -291,9 +291,9 @@ public class Buscaminas {
 		 boolean win = true;
 		 
 	        for(int i = 0; i <casillas.length && win; i++){
-	            for(int j = 0; j<casillas[0].length && win; j++){
+	            for(int j = 0; j<casillas[0].length && win; j++){ 
 	                if(!casillas[i][j].darSeleccionada() && !casillas[i][j].esMina()){
-	                    win = false;
+	                    win = false; 
 	                }
 	                else{
 	                	darPerdio();

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerHard">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerEasy">
    <children>
       <GridPane fx:id="gridD" gridLinesVisible="true" layoutX="38.0" layoutY="159.0" prefHeight="370.0" prefWidth="730.0">
          <columnConstraints>
@@ -71,5 +71,7 @@
       </Label>
       <Button fx:id="btn1" layoutX="38.0" layoutY="545.0" mnemonicParsing="false" onAction="#clickCargaD" prefHeight="25.0" prefWidth="104.0" text="NuevoJuego" />
       <Button fx:id="resol" layoutX="215.0" layoutY="545.0" mnemonicParsing="false" onAction="#resolMineSweperD" text="Resolver" />
+      <Label fx:id="lb6" layoutX="105.0" layoutY="74.0" />
+      <Label fx:id="lb7" layoutX="642.0" layoutY="74.0" />
    </children>
 </Pane>
