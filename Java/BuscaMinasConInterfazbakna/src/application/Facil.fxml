@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerEasy">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerGame">
    <children>
       <Label fx:id="lb1" layoutX="269.0" layoutY="14.0" text="Facil">
          <font>
@@ -37,10 +37,13 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <Button fx:id="btn1" layoutX="111.0" layoutY="353.0" mnemonicParsing="false" onAction="#clickCarga" prefHeight="25.0" prefWidth="104.0" text="Nuevo Juego" />
-      <Button fx:id="resol" layoutX="274.0" layoutY="353.0" mnemonicParsing="false" onAction="#resolMineSweper" text="Resolver" />
-      <Button fx:id="hint" layoutX="426.0" layoutY="353.0" mnemonicParsing="false" text="Dar Pista" />
-      <Label fx:id="lb2" layoutX="14.0" layoutY="160.0" prefHeight="17.0" prefWidth="87.0" />
-      <Label fx:id="lb3" layoutX="499.0" layoutY="160.0" prefHeight="17.0" prefWidth="87.0" />
+      <Button fx:id="btn1" layoutX="111.0" layoutY="366.0" mnemonicParsing="false" onAction="#clickCarga" prefHeight="25.0" prefWidth="104.0" text="Nuevo Juego" />
+      <Button fx:id="resol" layoutX="270.0" layoutY="366.0" mnemonicParsing="false" onAction="#resolMineSweper" text="Resolver" />
+      <Button fx:id="hint" layoutX="426.0" layoutY="366.0" mnemonicParsing="false" onAction="#giveHint" text="Dar Pista" />
+      <Label layoutX="171.0" layoutY="337.0" text="¡Pulsa click derecho para poner una bandera!">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

@@ -293,7 +293,7 @@ public class Buscaminas {
 	        for(int i = 0; i <casillas.length && win; i++){
 	            for(int j = 0; j<casillas[0].length && win; j++){ 
 	                if(!casillas[i][j].darSeleccionada() && !casillas[i][j].esMina()){
-	                    win = false; 
+	                    win = false;
 	                }
 	                else{
 	                	darPerdio();
@@ -312,7 +312,7 @@ public class Buscaminas {
 	 */
 	public String darPista() throws UnAvaiableCluesException {
 		//throw UnAvaiableCluesException;
-		boolean centinel = false;
+		boolean centinel = false; 
 		String clue = "No hay pistas para dar";
 		for(int i = 0; i< casillas.length && centinel == false ; i++) {
 			for(int j = 0; j<casillas[0].length && centinel == false; j++){
@@ -326,12 +326,7 @@ public class Buscaminas {
 			
 		}
 		if(clue == "No hay pistas para dar"){
-			try{
 				throw new UnAvaiableCluesException(clue);
-			}
-			catch(UnAvaiableCluesException e){
-				//e.printStackTrace();
-			}
 		}
 		
 		return clue;

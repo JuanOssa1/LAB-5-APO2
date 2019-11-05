@@ -8,12 +8,10 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerEasy">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1031.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerGame">
    <children>
-      <GridPane fx:id="gridD" gridLinesVisible="true" layoutX="38.0" layoutY="159.0" prefHeight="370.0" prefWidth="730.0">
+      <GridPane fx:id="gridD" gridLinesVisible="true" layoutX="38.0" layoutY="109.0" prefHeight="462.0" prefWidth="939.0">
          <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -64,14 +62,18 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
       </GridPane>
-      <Label layoutX="364.0" layoutY="59.0" text="Dificil">
+      <Label layoutX="476.0" layoutY="31.0" text="Dificil">
          <font>
             <Font size="32.0" />
          </font>
       </Label>
-      <Button fx:id="btn1" layoutX="38.0" layoutY="545.0" mnemonicParsing="false" onAction="#clickCargaD" prefHeight="25.0" prefWidth="104.0" text="NuevoJuego" />
-      <Button fx:id="resol" layoutX="215.0" layoutY="545.0" mnemonicParsing="false" onAction="#resolMineSweperD" text="Resolver" />
-      <Label fx:id="lb6" layoutX="105.0" layoutY="74.0" />
-      <Label fx:id="lb7" layoutX="642.0" layoutY="74.0" />
+      <Button fx:id="btn1" layoutX="75.0" layoutY="615.0" mnemonicParsing="false" onAction="#clickCargaD" prefHeight="25.0" prefWidth="104.0" text="NuevoJuego" />
+      <Button fx:id="resol" layoutX="476.0" layoutY="615.0" mnemonicParsing="false" onAction="#resolMineSweperD" text="Resolver" />
+      <Button fx:id="hint" layoutX="811.0" layoutY="615.0" mnemonicParsing="false" onAction="#giveHintD" text="DarPista" />
+      <Label layoutX="327.0" layoutY="580.0" text="¡Pulsa click derecho para poner una bandera!">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
